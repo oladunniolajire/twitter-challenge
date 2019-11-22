@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Twitter Challenge</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #5F9EA0;
+        }
+
+        header {
+            overflow: hidden;
+            max-width: 100%;
+
+        }
+
+        .container {
+            position: relative;
+            max-width: 98%;
+        }
+
+        img.top {
+            color: black;
+            top: 2%;
+            right: 70%;
+        }
+
+        img.focus {
+            position: absolute;
+            top: 2%;
+            left: 70%;
+
+        }
+
+        img.bottom {
+            left: 80%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .text {
+            text-align: center;
+            margin-top: -10%;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h5 {
+            font-size: 1.1em;
+        }
+
+        .btn {
+            color: #fff;
+            border-color: #48D1CC;
+            background-color: #48D1CC;
+            margin-top: 2%;
+        }
+
+        /* media queries*/
+        @media (max-width:380px) {
+            body {
+                max-width: 100%;
+            }
+
+            img.focus {
+                text-align: center;
+                position: relative;
+                left: 5%;
+
+                height: 220px;
+
+
+            }
+
+            .text {
+                margin-top: 10%;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 10%;
+
+            }
+
+            h1 {
+                font-size: 2em;
+
+
+            }
+
+            h5 {
+                font-size: 1em;
+            }
+
+            img.top {
+                display: none;
+            }
+
+            img.bottom {
+                display: none;
+            }
+
+            img.productivity {
+                text-align: center;
+                position: relative;
+                left: 5%;
+                height: 240px;
+
+            }
+        }
+
+        @media (min-width:400px)and (max-width:711px) {
+            body {
+                max-width: 100%;
+            }
+
+            img.focus {
+                text-align: center;
+                position: relative;
+                left: auto;
+                height: 300px;
+
+
+            }
+
+            .text {
+                margin-top: 10%;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 10%;
+
+            }
+
+            h1 {
+                font-size: 2em;
+
+
+            }
+
+            h5 {
+                font-size: 1em;
+            }
+
+            img.top {
+                display: none;
+            }
+
+            img.bottom {
+                display: none;
+            }
+
+            img.productivity {
+                text-align: center;
+                position: relative;
+                left: 10%;
+                height: 300px;
+
+            }
+        }
+
+
+        @media (min-width:720px)and (max-width:1024px) {
+            body {
+                max-width: 100%;
+            }
+
+            img.focus {
+                text-align: center;
+                position: relative;
+                left: 25%;
+                height: 300px;
+
+
+            }
+
+            .text {
+                margin-top: 10%;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 10%;
+
+            }
+
+            h1 {
+                font-size: 3em;
+
+
+            }
+
+            h5 {
+                font-size: 2em;
+            }
+
+
+
+            img.productivity {
+                text-align: center;
+                position: relative;
+                right: 1%;
+                height: 300px;
+
+            }
+
+            img.top {
+                height: 250px;
+            }
+
+            img.bottom {
+                height: 300px;
+                position: absolute;
+                left: 60%;
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="top" src="https://res.cloudinary.com/oladunni/image/upload/v1574417199/top-right_pen_draw_w9xrsc.svg">
+            <img class="focus" src="https://res.cloudinary.com/oladunni/image/upload/v1574417213/undraw_dev_focus_b9xo_1_lv2vfa.svg">
+            <div class="text">
+                <h1>Let's review your Resume</h1>
+                <h5>Our clients have gotten jobs at reputable companies all over the globe</h5>
+                <button class="btn btn-default btn-lg">Join Us Now</button>
+            </div>
+
+            <img class="productivity" src="https://res.cloudinary.com/oladunni/image/upload/v1574417229/undraw_dev_productivity_umsq_1_ya66pj.svg">
+            <img class="bottom" src="https://res.cloudinary.com/oladunni/image/upload/v1574417187/bottom-right_pen_draw_ysqqjw.svg" width="415px">
+        </div>
+    </header>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+
+</html>
